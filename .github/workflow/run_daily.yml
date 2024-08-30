@@ -1,0 +1,12 @@
+name: Run Daily
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Executa todos os dias à meia-noite UTC
+
+jobs:
+  run-link:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Curl Request
+        run: curl -L http://m3u4u.com/m3u/xe47yz1pd9spv21mn9vq
