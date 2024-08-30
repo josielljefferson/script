@@ -2,7 +2,7 @@ name: Run Daily
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Executa todos os dias à meia-noite UTC
+    - cron: '0 18 * * *' # Executa todos os dias à meia-noite UTC
 
 jobs:
   run-link:
